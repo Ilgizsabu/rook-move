@@ -1,4 +1,4 @@
-# rook-move
+# Rook-move
 
 ## Project Description:
 
