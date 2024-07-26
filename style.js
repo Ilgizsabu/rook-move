@@ -19,11 +19,9 @@ const moveTwoCell = threeMove + fourMove;
 
 if (moveOneCell === moveTwoCell) {
     alert('Rook stands still!');
-} 
-
-if (oneMove === threeMove || twoMove === fourMove) {
-    alert(`The rook needs one move to reach the ${moveTwoCell} cell`);
-}   else {
-    alert(`The rook needs two move to reach the ${moveTwoCell} cell. 
-    The first variant via the ${moveVariantOne} cell and the second variant via the ${moveVariantTwo} cell`); 
-}
+} else if (oneMove === threeMove || twoMove === fourMove) {
+        alert(`The rook needs one move to reach the ${moveTwoCell} cell`);
+    }   else {
+        alert(`The rook needs two move to reach the ${moveTwoCell} cell. 
+        The first variant via the ${moveVariantOne} cell and the second variant via the ${moveVariantTwo} cell`); 
+    }
