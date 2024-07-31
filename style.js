@@ -10,18 +10,18 @@ if (
     || fourMove < 'a' || fourMove > 'h'
 ) {
     alert('Incorrect data entered. Please enter numbers between 1 and 8 and letters between a and h.');
-}
-    
-const moveVariantOne = oneMove + fourMove;
-const moveVariantTwo = threeMove + twoMove;
-const moveOneCell = oneMove + twoMove;
-const moveTwoCell = threeMove + fourMove;
+} else {
+    const moveVariantOne = oneMove + fourMove;
+    const moveVariantTwo = threeMove + twoMove;
+    const moveOneCell = oneMove + twoMove;
+    const moveTwoCell = threeMove + fourMove;
 
-if (moveOneCell === moveTwoCell) {
-    alert('Rook stands still!');
-} else if (oneMove === threeMove || twoMove === fourMove) {
-        alert(`The rook needs one move to reach the ${moveTwoCell} cell`);
+    if (moveOneCell === moveTwoCell) {
+        alert('Rook stands still!');
+    } else if (oneMove === threeMove || twoMove === fourMove) {
+            alert(`The rook needs one move to reach the ${moveTwoCell} cell`);
     }   else {
-        alert(`The rook needs two move to reach the ${moveTwoCell} cell. 
-        The first variant via the ${moveVariantOne} cell and the second variant via the ${moveVariantTwo} cell`); 
+            alert(`The rook needs two move to reach the ${moveTwoCell} cell. 
+            The first variant via the ${moveVariantOne} cell and the second variant via the ${moveVariantTwo} cell`); 
     }
+}
